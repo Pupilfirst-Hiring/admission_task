@@ -92,11 +92,9 @@ A few notes to help you avoid any hiccups while implementing the programming cha
 
 4. Priority can be any integer _greater than_ or _equal to_ 0. 0 being the highest priority
 
-5. If two task have the same priority, the task that was added first should be displayed first.
+5. If two tasks have the same priority, the task that was added first should be displayed first.
 
-   The application must open the files task.txt and completed.txt from where the app is run, and not where the app is located. For example, if we invoke the app like this:
-
-6. The files should always be sorted in order of the priority, ie, the task with the highest priority should be first item in the file.
+6. The application must open the files task.txt and completed.txt from where the app is run, and not where the app is located. For example, if we invoke the app like this:
 
    ```
    $ cd /path/to/plans
@@ -105,8 +103,6 @@ A few notes to help you avoid any hiccups while implementing the programming cha
    ```
 
    The application should look for the text files in `/path/to/plans`, since that is the user’s current directory.
-
-> Please note that the programming task could be completed without the use of any additional packages
 
 ## Usage
 
