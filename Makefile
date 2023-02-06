@@ -26,9 +26,9 @@ c: _build
 	echo '\n.\\task.out %1 %2 %3' >> _build/c/task.bat
 	cat _build/c/Intro.md _build/c/getting_started.md _build/c/Test.md > _build/c/README.md
 	rm _build/c/Intro.md _build/c/getting_started.md _build/c/Test.md
-	cd _build && zip -r --quiet fellowship-c.zip c -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-c.zip c -x "node_modules" -x "package-lock.json"
 	rm -rf _build/c
-	echo "Created C package: fellowship-c.zip"
+	echo "Created C package: task-c.zip"
 
 cpp: _build
 	cp -rf cpp _build
@@ -39,9 +39,9 @@ cpp: _build
 	echo '\n.\\task.out %1 %2 %3' >> _build/cpp/task.bat
 	cat _build/cpp/Intro.md _build/cpp/getting_started.md _build/cpp/Test.md > _build/cpp/README.md
 	rm _build/cpp/Intro.md _build/cpp/getting_started.md _build/cpp/Test.md
-	cd _build && zip -r --quiet fellowship-cpp.zip cpp -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-cpp.zip cpp -x "node_modules" -x "package-lock.json"
 	rm -rf _build/cpp
-	echo "Created C++ package: fellowship-cpp.zip"
+	echo "Created C++ package: task-cpp.zip"
 
 javascript: _build
 	cp -rf javascript _build
@@ -52,9 +52,9 @@ javascript: _build
 	echo \\nnode task.js %1 %2 %3 >> _build/javascript/task.bat
 	cat _build/javascript/Intro.md _build/javascript/getting_started.md _build/javascript/Test.md > _build/javascript/README.md
 	rm _build/javascript/Intro.md _build/javascript/getting_started.md _build/javascript/Test.md
-	cd _build && zip -r --quiet fellowship-javascript.zip javascript -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-javascript.zip javascript -x "node_modules" -x "package-lock.json"
 	rm -rf _build/javascript
-	echo "Created JavaScript package: fellowship-javascript.zip"
+	echo "Created JavaScript package: task-javascript.zip"
 
 ruby: _build
 	cp -rf ruby _build
@@ -65,9 +65,9 @@ ruby: _build
 	echo \\nruby task.rb %1 %2 %3 >> _build/ruby/task.bat
 	cat _build/ruby/Intro.md _build/ruby/getting_started.md _build/ruby/Test.md > _build/ruby/README.md
 	rm _build/ruby/Intro.md _build/ruby/getting_started.md _build/ruby/Test.md
-	cd _build && zip -r --quiet fellowship-ruby.zip ruby -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-ruby.zip ruby -x "node_modules" -x "package-lock.json"
 	rm -rf _build/ruby
-	echo "Created ruby package: fellowship-ruby.zip"
+	echo "Created ruby package: task-ruby.zip"
 
 python: _build
 	cp -rf python _build
@@ -78,9 +78,9 @@ python: _build
 	echo \\npython3 task.py %1 %2 %3 >> _build/python/task.bat
 	cat _build/python/Intro.md _build/python/getting_started.md _build/python/Test.md > _build/python/README.md
 	rm _build/python/Intro.md _build/python/getting_started.md _build/python/Test.md
-	cd _build && zip -r --quiet fellowship-python.zip python -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-python.zip python -x "node_modules" -x "package-lock.json"
 	rm -rf _build/python
-	echo "Created python package: fellowship-python.zip"
+	echo "Created python package: task-python.zip"
 
 java: _build
 	cp -rf java _build
@@ -91,9 +91,9 @@ java: _build
 	echo \\njava Task %1 %2 %3 >> _build/java/task.bat
 	cat _build/java/Intro.md _build/java/getting_started.md _build/java/Test.md > _build/java/README.md
 	rm _build/java/Intro.md _build/java/getting_started.md _build/java/Test.md
-	cd _build && zip -r --quiet fellowship-java.zip java -x "node_modules" -x "package-lock.json"
+	cd _build && zip -r --quiet task-java.zip java -x "node_modules" -x "package-lock.json"
 	rm -rf _build/java
-	echo "Created Java package: fellowship-java.zip"
+	echo "Created Java package: task-java.zip"
 
 _build:
 	mkdir -p _build
